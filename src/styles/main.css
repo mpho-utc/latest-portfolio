@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------
+   BASE (Global Styles)
+-------------------------- */
+@layer base {
+  body {
+    @apply font-body text-brand-lightGray bg-brand-darkBlue;
+  }
+
+  h1 {
+    @apply font-heading text-6xl md:text-7xl
+           text-brand-yellow
+           tracking-cinematic leading-tight
+           uppercase;
+  }
+
+  h2 {
+    @apply font-heading text-4xl md:text-5xl
+           text-brand-yellow
+           tracking-batwide leading-snug
+           uppercase;
+  }
+
+  h3 {
+    @apply font-subheading text-3xl text-brand-yellow;
+  }
+
+  p {
+    @apply font-body text-base leading-relaxed;
+  }
+
+  a {
+    @apply text-brand-yellow hover:text-white transition-colors;
+  }
+}
+
+/* -------------------------
+   ICON SYSTEM
+-------------------------- */
+@layer components {
+
+  .icon {
+    @apply inline-flex items-center justify-center;
+  }
+
+  /* Default icon */
+  .icon-primary {
+    @apply text-brand-yellow transition duration-300;
+  }
+
+  .icon-muted {
+    @apply text-brand-lightGray/70;
+  }
+
+  .icon-hover {
+    @apply hover:text-brand-yellow hover:scale-110 transition duration-300 cursor-pointer;
+  }
+
+  /* Gotham glow */
+  .icon-glow {
+    text-shadow: 0 0 8px rgba(255, 203, 5, 0.6);
+  }
+
+}
+
+
+/* -------------------------
+   COMPONENTS
+-------------------------- */
+@layer components {
+  .btn-primary {
+    @apply bg-brand-yellow text-brand-darkBlue
+           px-6 py-3 rounded-md font-bold uppercase
+           hover:border hover:border-brand-yellow hover:text-brand-yellow hover:bg-brand-darkBlue;
+  }
+
+  .btn-secondary {
+    @apply border border-brand-yellow text-brand-yellow uppercase
+           px-6 py-3 rounded-md font-bold
+           hover:bg-brand-yellow hover:text-brand-darkBlue transition;
+  }
+
+  .card {
+    @apply bg-brand-darkBlue p-6 rounded-xl
+           shadow-lg border border-white/10;
+  }
+}
+
+/* -------------------------
+   UTILITIES
+-------------------------- */
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .star {
+    @apply absolute w-1 h-1 rounded-full bg-white animate-star-flicker;
+  }
+}
+
+/* Selection */
+::selection {
+  background-color: theme('colors.brand.yellow');
+  color: theme('colors.brand.darkBlue');
+}
+
+::-moz-selection {
+  background-color: theme('colors.brand.yellow');
+  color: theme('colors.brand.darkBlue');
+}
