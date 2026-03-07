@@ -5,8 +5,8 @@ export const portfolioData  = {
       "role": "Full‑Stack Software Developer",
       "tagline": "Building scalable, user‑centric systems from interface to infrastructure",
       contacts: {
-        phone: "+27 73 912 7333",
-        email: "mphog3401@gmail.com"
+        phone: "+27 73 868 7887",
+        email: "mphog332211@gmail.com"
       }
     }
   },
@@ -40,12 +40,12 @@ export const portfolioData  = {
     },
     {
       "name": "github",
-      "url": "https://github.com/mpho-shabalala",
+      "url": "https://github.com/mpho-utc",
       "icon": "github"
     },
     {
       "name": "email",
-      "url": "mailto:mphog3401@gmail.com",
+      "url": "mailto:mphog332211@gmail.com",
       "icon": "email"
     }
   ],

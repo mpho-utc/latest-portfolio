@@ -1,4 +1,4 @@
-import SecondaryBTN from '../shared/secondaryBTN';
+import SecondaryBTNLink from '../shared/secondaryBtnLink';
 import { usePortfolioData } from '../../../contexts/PortfolioContext';
 import stars from '../../../utils/stars'
 export default function ProjectsOverview() {
@@ -46,7 +46,7 @@ export default function ProjectsOverview() {
                   </div>
 
                   <div className="pt-4">
-                    <SecondaryBTN
+                    <SecondaryBTNLink
                       href={'projects/' + project.id }
                       text="Explore Project"
                     />

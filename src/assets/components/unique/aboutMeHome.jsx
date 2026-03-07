@@ -1,6 +1,6 @@
 import { usePortfolioData } from '../../../contexts/PortfolioContext';
 import Counter from '../shared/counter';
-import SecondaryBTN from '../shared/secondaryBTN';
+import SecondaryBTNLink from '../shared/secondaryBTNLink';
 
 export default function About() {
   const { meta, socialLinks, journey, projects } = usePortfolioData();
@@ -95,7 +95,7 @@ export default function About() {
 
           {/* ONLY Secondary Button */}
           <div className="mt-4 w-full md:w-fit">
-            <SecondaryBTN href="/#/about" text="MY STORY" />
+            <SecondaryBTNLink href="/#/about" text="MY STORY" />
           </div>
 
         </div>

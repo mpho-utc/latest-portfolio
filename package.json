@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mpho-shabalala.github.io/latest-portfolio",
+  "homepage": "https://mpho-utc.github.io/latest-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
