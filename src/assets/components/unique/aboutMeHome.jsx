@@ -95,7 +95,7 @@ export default function About() {
 
           {/* ONLY Secondary Button */}
           <div className="mt-4 w-full md:w-fit">
-            <SecondaryBTNLink href="/#/about" text="MY STORY" />
+            <SecondaryBTNLink href="/about" text="MY STORY" />
           </div>
 
         </div>
